@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc --noEmit && tsup",
-    "start": "tsx ./src/main.ts",
+    "start": "node dist/main.js",
+    "dev": "tsx watch src/main.ts",
     "start:prod": "node dist/main",
     "dev:server": "tsx watch ./src/main.ts",
     "test": "tsx watch ./test/all.test.ts",
